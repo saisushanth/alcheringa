@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>	
+	<title>Hover on Everything</title>
+	<style>
+
+		* { margin: 0; padding: 0; }
+		body { font: 14px Georgia, serif; }
+		article, aside, figure, footer, header, hgroup,
+		menu, nav, section { display: block; }
+		#page-wrap { width: 960px; margin: 80px auto; }
+
+	    #all > ul { 
+	    	list-style: none;
+	    	float: left; width: 200px; 
+	    	padding: 0 10px 0 0; 
+	    }
+	    #all a { 
+			text-decoration: none; 
+			display: block; 
+			padding: 10px;
+			background: green; 
+			border-radius: 20px; 
+			color: white; 
+			text-align: center;
+			margin: 0 0 5px 0; 
+			
+			-webkit-transition: all 0.2s ease;
+			-moz-transition: all 0.2s ease;
+			-o-transition: all 0.2s ease;
+	    }
+	    #all:hover a {
+			opacity: 0.2;
+	    }
+	    #all:hover ul:hover a {
+			opacity: 0.5; 
+	    }
+	    #all:hover ul:hover a:hover {
+			opacity: 1;
+	    }
+	</style>
+</head>
+
+<body>
+
+	<div id="page-wrap">
+		
+		<div id="all">
+		
+			<ul>
+				<li><a href="alcheringa.in">A</a></li>
+				<li><a href="alcheringa.in/beta15/">B</a></li>
+				<li><a href="#">C</a></li>
+				<li><a href="#">D</a></li>
+				<li><a href="#">E</a></li>
+				
+			</ul>
+			
+			<ul>
+				<li><a href="#">H</a></li>
+				<li><a href="#">I</a></li>
+				<li><a href="#">J</a></li>
+				<li><a href="#">K</a></li>
+				<li><a href="#">L</a></li>
+				
+			</ul>
+			
+			<ul>
+				<li><a href="#">O</a></li>
+				<li><a href="#">P</a></li>
+				<li><a href="#">Q</a></li>
+				<li><a href="#">R</a></li>
+				<li><a href="#">S</a></li>
+				
+			</ul>
+		
+		</div>
+	
+	</div>
+	
+</body>
+
+</html>

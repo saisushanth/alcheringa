@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Triple Panel Image Slider with jQuery and CSS3</title>
+        <meta name="description" content="Triple Panel Image Slider with jQuery and CSS3 and a 3D look" />
+        <meta name="keywords" content="css3, image slider, jquery, 3d, 3dtransform, triple, transition, translate" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Prata' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.26887.js"></script> 
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body style="background: transparent;padding-top: 50px;">
+        <div class="container">
+		
+			
+			<div class="main">
+			
+				<div class="fs-slider" id="fs-slider">
+					
+					<figure>
+						<a href="https://www.facebook.com/photo.php?fbid=540530742651436&set=pb.194687567235757.-2207520000.1390530682.&type=3&theater" target="_blank"><img src="images/1.jpg" alt="image01" /></a>
+						<figcaption>
+							<h3>Blood Donation Drive</h3>
+							<p>Held during Alcheringa every year, the Blood Donation Drive has witnessed immense participation from the crowd and has been a major success. </p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<a href="http://www.alcheringa.in/udaan" target="_blank"><img src="images/2.jpg" alt="image02" /></a>
+						<figcaption>
+							<h3>Udaan</h3>
+							<p>In less than 3 years, Udaan has reached more than 5000 under-privileged children in more than 100 cities, giving new heights to their hopes by showing them various perspectives and possibilities in life.</p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<a href="https://www.facebook.com/photo.php?fbid=633459123358597&set=pb.194687567235757.-2207520000.1390530539.&type=3&theater" target="_blank"><img src="images/3.jpg" alt="image03" /></a>
+						<figcaption>
+							<h3>North-East Unveiled</h3>
+							<p>This year, Alcheringa has taken a step to make the whole world know about the power and beauty of the immense North-East wherein resides the core of Alcheringa.</p>
+						</figcaption>
+					</figure>
+					
+						<figure>
+						<a href="https://www.facebook.com/photo.php?fbid=612112465493263&set=pb.194687567235757.-2207520000.1390530543.&type=3&theater" target="_blank"><img src="images/4.jpg" alt="image04" /></a>
+					<figcaption>
+							<h3>Women Trafficking</h3>
+							<p>Recently, Alcheringa joined hands with Lakshmi and G Plus to support the campaign against human trafficking. Again, this social campaign succeeded in gathering the attention of a huge number of people. </p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<a href="http://www.alcheringa.in/udaan" target="_blank"><img src="images/5.jpg" alt="image05" /></a>
+						<figcaption>
+							<h3>Udaan</h3>
+							<p>In less than 3 years, Udaan has reached more than 5000 under-privileged children in more than 100 cities, giving new heights to their hopes by showing them various perspectives and possibilities in life.</p>
+						</figcaption>
+					</figure>
+				</div><!-- /fs-slider -->
+			
+			</div>
+			
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.imgslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$( '#fs-slider' ).imgslider();
+
+			});
+		</script>
+    </body>
+</html>

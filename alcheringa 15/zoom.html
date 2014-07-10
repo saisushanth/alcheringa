@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<title>ZOOM CHECK</title>
+<style>
+button
+{
+height:2%;
+width:1%;
+position:absolute;
+left:47%;
+top:45%;
+background-color:red;
+border:none;
+}
+
+@keyframes verify
+{
+from 
+{
+height:2%;
+width:1%;
+left:47%;
+top:45%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@-webkit-keyframes verify
+{
+from 
+{
+height:2%;
+width:1%;
+left:47%;
+top:45%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+</style>
+<script>
+function zoom(x)
+{
+x.style.animation="verify 3s forwards";
+x.style.WebkitAnimation="verify 3s forwards";
+x.style.color="white";
+x.style.fontSize="xx-large";
+x.innerHTML="hello";
+}
+</script>
+</head>
+<body>
+	<button onclick="zoom(this)"> </button>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: calibri;
+}
+body{
+	background:  url('alcher.jpg');
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	
+		
+}
+
+#wrapper, #final{
+	margin-left: 10px;
+	float: left;
+	padding: 5px;
+	margin-right: 20px;
+	background: rgba(0,0,0,0.3);
+}
+#main_image{
+
+	float: left;
+}
+#alcherimage{
+	height: 700px;
+	width: 485px;
+	
+}
+#time_box{
+	position: absolute;
+	top: 40px;
+	padding: 0px 25px;
+	text-align: right;
+	width: 435px;
+	font-size: 22px;
+	color: #fde7ba;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
+}
+#user_text{
+	position: absolute;
+	top: 470px;
+	padding: 0px 100px;
+	text-align: center;
+	width: 285px;
+	font-size: 34px;
+	color: #fde7ba;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+#accept{
+
+	margin: 10px;
+	color: white;
+	padding: 5px;
+	font-size: 20px;
+	font-family: calibri;
+	cursor: pointer;
+	background: blue;
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%,#0C91EC), color-stop(100%,#257AB6));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C91EC), color-stop(100%,#257AB6));
+}
+#go_back{
+
+	margin: 0px 20px;
+	color: white;
+	padding: 5px;
+	font-size: 20px;
+	font-family: calibri;
+	cursor: pointer;
+	background: red;
+	background: -moz-linear-gradient(top,#DD4B39,#D14836);
+	background: -webkit-linear-gradient(top,#DD4B39,#D14836);
+}
+
+#edit_text_box{
+	margin-top: 120px;
+	padding: 20px;
+	float: left;
+}
+#user_input{
+	padding: 5px;
+	float: left;
+}
+#submit, #change_size{
+	float: left;
+	padding: 5px;
+	font-size: 20px;
+	font-family: calibri;
+	
+}
+#increase_size, #decrease_size{
+	float: left;
+	padding: 5px;
+	font-size: 20px;
+	position: relative;
+	bottom: 5px;
+	width: 30px;
+	font-family: calibri;
+}
+
+#final{
+	display: none;
+
+}
+#final_image{
+	float: left;
+}
+#submit{
+	cursor: pointer;
+	margin-left: 30px;
+	color: white;
+	border: 1px solid white;
+	background: rgba(0,0,0,0.1);
+}
+#submit:hover{
+	background: rgba(0,0,0,0.4);
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>IITG MUN' 2014 Alcheringa|Atlantis</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/form.css" type="text/css" media="screen">
+		<link rel="shortcut icon" href="images/alcherlady.png" type="image/x-icon" />
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/essential.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="js/ui.core.js"></script>
+    <script type="text/javascript" src="js/ui.sortable.js"></script>
+
+	
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42875627-1', 'cjcmun.com');
+  ga('send', 'pageview');
+
+</script>
+ <script type="text/javascript">
+            (
+            	
+            function($){
+
+                $.fn.shuffle = function() {
+                    return this.each(function(){
+                        var items = $(this).children();
+
+                        return (items.length)
+                            ? $(this).html($.shuffle(items,$(this)))
+                        : this;
+                    });
+                }
+
+                $.fn.validate = function() {
+                    var res = false;
+                    this.each(function(){
+                        var arr = $(this).children();
+                        res =    ((arr[0].innerHTML=="1")&&
+                            (arr[1].innerHTML=="2")&&
+                            (arr[2].innerHTML=="3")&&
+                            (arr[3].innerHTML=="4")&&
+                            (arr[4].innerHTML=="5")&&
+                            (arr[5].innerHTML=="6"));
+                    });
+                    return res;
+                }
+
+                $.shuffle = function(arr,obj) {
+                    for(
+                    var j, x, i = arr.length; i;
+                    j = parseInt(Math.random() * i),
+                    x = arr[--i], arr[i] = arr[j], arr[j] = x
+                );
+                    if(arr[0].innerHTML=="1") obj.html($.shuffle(arr,obj))
+                    else return arr;
+                }
+
+            })(jQuery);
+
+            $(function() {
+                $("#sortable").sortable();
+                $("#sortable").disableSelection();
+                $('ul').shuffle();
+
+                $("#formsubmit").click(function(){
+                    ($('ul').validate()) ? alert("Yeah, you are a human!") : alert("No, you are not a human!");
+                });
+            });
+
+            $(function() {
+            				if(document.getElementById("checkbox").checked) { $("#cpquestion").slideDown(); }
+            });
+        </script>
+        
+        </script>
+</head>
+
+<body>
+		<div style="position:fixed; z-index:100000;position:fixed;"  >
+			<a href="http://alcheringa.in" target="_blank"><img src="images/alcherlady.png" width="74px" height="74px"></a>
+		</div>
+<div class="menu">	
+		<div class="container clearfix" style="margin-right:20px;">
+	<div id="nav" class="fright" >
+					<ul class="navigation">
+						<li onClick="location.href='index.html';">Back to Home Page</li>
+						 <li data-slide="2">Form</li>
+						
+					</ul>
+		</div>
+		</div>
+	
+	</div>
+</div>
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5"> 
+<!--<b style="color:#2d2108;z-index:1;margin:2% ;font-size:20px;position:fixed;">Registration Fee -  <b style="font-size:18px;">Rs 1200</b> </b> <br />-->
+<a href="http://alcheringa.in/IITGMUN"><img src="images/munlogo.png" width="350px" height="263px" style="float:right;margin-top:20px;" /></a>
+       <form class="registration" style="margin-top:-10px;" action="ipinfo.php" method="POST">
+            <fieldset>
+                <legend>About you</legend>
+                <label>Full Name</label>
+                <input type="text" maxlength="100" value=""name="ipname" required="required"/ >
+                <label>Institute</label>
+                <input type="text" maxlength="100" value=""name="ipinstitute" required="required"/ >
+                <label>Birthdate</label>
+                <input name="ipbirthday" type="text" required="required" value="dd-mm-yyyy"/>
+                <label>E-Mail</label>
+                <input type="email" maxlength="120" value="" name="ipemail" required="required"/ >
+                <label>Mobile</label>
+                <input type="text" maxlength="10"  name="ipmobile" required="required"/ >
+            </fieldset>
+            <fieldset >
+                <legend>Details</legend>
+             
+
+
+
+                 		<div id="panel1" style="height:10%;width:100%;">
+							<div id="basic" style="margin-top:-40px;">
+
+								
+								<h5 style="color:#b58f2c;font-size: 18px;">Q) List your IP experience (include links of your works if possible)</h5>
+								<textarea rows="13" cols="30" style="width:90%;color:#2d2108;" placeholder="word limit 450-500 words" name="ip1" required="required" ></textarea>
+								<br>	<h5 style="color:#b58f2c;font-size: 18px;">Q)  Would you accept the post of a reporter if not allotted an editorial position.</h5>
+								<textarea rows="13" cols="30" style="width:90%;color:#2d2108;" placeholder="word limit 450-500 words" name="ip2" required="required" ></textarea>
+								<br>
+								
+
+								
+							</div>
+						</div>
+
+
+
+            </fieldset>
+
+                <br>
+                 <input type="reset" value="RESET" name="reset" style="float:center; background:#2d2108;height:35px;width:100px;"/>
+                <input type="submit" value="SUBMIT" name="submit" style="float:center; background:#2d2108;height:35px;width:100px;"/>
+            </fieldset>
+        </form>
+        </div>
+ 
+
+
+<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5"> 
+  <div class="effect_2 padding_slide7"> 
+    <div class="container clearfix"> 
+      <div id="content" class="grid_12"> 
+        <p style="color:#2d2108;">You have to learn the rules of the game. And then you have to play better than anyone else.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="footer"style=" background:#2d2108;">
+	<div class="container clearfix" background:#2d2108;>
+	
+    <div id="back_top"><a class="button" title="" data-slide="2" style="color:#b58f2c;">back to top</a></div>
+	</div>
+</div>
+<p></p>
+</body>
+</html>

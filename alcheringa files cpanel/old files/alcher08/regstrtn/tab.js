@@ -1,0 +1,12 @@
+stm_bm(["menu4878",600,"","blank.gif",0,"","",0,0,250,0,1000,1,0,0,"","",67108873,0,1,2,"default","hand",""],this);
+stm_bp("p0",[0,4,0,0,2,2,0,0,100,"",-2,"",-2,90,0,0,"#000000","","",3,0,0,"#FFFFFF"]);
+stm_ai("p0i0",[0,"Event","","",-1,-1,0,"event.php","_self","","","","",0,0,0,"","",0,0,0,1,1,"#86C76D",0,"#409C30",0,"","",3,3,0,0,"#FFFFFF","#FFFFFF","#FFFFFF","#000000","11pt Vardana","11pt Vardana",0,0],60,0);
+stm_aix("p0i1","p0i0",[0,"Hospitality","","",-1,-1,0,"hospi.html"],60,0);
+stm_aix("p0i2","p0i0",[0,"Hot Cotoure","","",-1,-1,0,"hot.php"],60,0);
+stm_aix("p0i3","p0i0",[0,"Mr. & Ms. Alcheringa","","",-1,-1,0,"alcher.php"],60,0);
+stm_aix("p0i3","p0i0",[0,"Raga High","","",-1,-1,0,"raga.php"],60,0);
+stm_aix("p0i3","p0i0",[0,"Rock-o-Phonix","","",-1,-1,0,"rock.php"],60,0);
+stm_aix("p0i3","p0i0",[0,"Groove","","",-1,-1,0,"groove.html"],60,0);
+stm_aix("p0i3","p0i0",[0,"Alumni","","",-1,-1,0,"alumni.html"],60,0);
+stm_ep();
+stm_em();

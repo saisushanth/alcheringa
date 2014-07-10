@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Alcheringa</title>
+    <style type="text/css" media="screen">
+      body {
+        background-color: #f1f1f1;
+        margin: 0;
+      }
+     #parallax_wrapper {
+        position: relative;
+        z-index: 0;
+        transition: all 0.25s ease-in;
+        -webkit-transition: all 0.25s ease-in 0;
+      }
+      #parallax_field {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 370px;
+        width: 100%;
+      }
+      #parallax_field #parallax_bg {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 110%;
+        height: 425px;
+        z-index: 1;
+      }
+      #parallax_illustration {
+        display: block;
+        margin: 0 auto;
+        width: 940px;
+        height: 370px;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+      } 
+      #parallax_illustration img {
+        position: absolute;
+      }
+      #parallax_illustration #parallax_error_text {
+        top: 72px;
+        left: 72px;
+        z-index: 10;
+      }
+
+      #parallax_illustration #parallax_building_1 {
+        top: 73px;
+        left: 467px;
+        z-index: 5;
+      }
+ 
+    </style>
+  </head>
+  <body>
+
+  <div id="parallax_wrapper">
+      <div id="parallax_field">
+        <img alt="" class="js-plaxify" data-invert="true" data-xrange="0" data-yrange="20" height="415" id="parallax_bg" width="940"
+        src="image/a1.png"</div>
+      <div id="parallax_illustration">
+        <div id="auth"></div>
+
+        <img alt="404 &ldquo;This is not the web page you are looking for&rdquo;" class="js-plaxify" data-xrange="20" data-yrange="10" height="249" id="parallax_error_text" width="271"
+        src="image/download.png" />
+        
+        <img alt="" class="js-plaxify" data-invert="true" data-xrange="50" data-yrange="20" height="200" id="parallax_building_1" width="304"
+        src="image/iitg.png" />
+        
+
+    </div>
+
+
+
+   <script src="js/a.js">
+      </script>
+
+    <script src="js/b.js">
+    </script>
+
+    <script src="js/c.js">
+    </script>
+  </body>
+</html>

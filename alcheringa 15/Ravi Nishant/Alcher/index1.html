@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>	<title>Flipping Example</title>
+<style type="text/css">
+
+
+			/* START: Accommodating for IE */
+			.flip-container:hover .back, .flip-container.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip-container:hover .front, .flip-container.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+		
+		/* END: Accommodating for IE */
+
+		.flip-container, .front, .back {
+			width: 320px;
+			height: 427px;
+		}
+
+		.flipper {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-ms-transition: 0.6s;
+
+			-moz-transition: 0.6s;
+			-moz-transform: perspective(1000px);
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+
+			transition: 0.6s;
+			transform-style: preserve-3d;
+
+			position: relative;
+		}
+
+		.front, .back {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+		    -webkit-transition: 0.6s;
+		    -webkit-transform-style: preserve-3d;
+
+		    -moz-transition: 0.6s;
+		    -moz-transform-style: preserve-3d;
+
+		    -o-transition: 0.6s;
+		    -o-transform-style: preserve-3d;
+
+		    -ms-transition: 0.6s;
+		    -ms-transform-style: preserve-3d;
+
+		    transition: 0.6s;
+		    transform-style: preserve-3d;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.front {
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			background: lightgreen;
+			z-index: 2;
+		}
+
+		.back {
+			background: lightblue;
+			-webkit-transform: rotateY(-180deg);
+		    -moz-transform: rotateY(-180deg);
+		    -o-transform: rotateY(-180deg);
+		    -ms-transform: rotateY(-180deg);
+		    transform: rotateY(-180deg);
+		}
+
+		.front .name {
+			font-size: 2em;
+			display: inline-block;
+			background: rgba(33, 33, 33, 0.9);
+			color: #f8f8f8;
+			font-family: Courier;
+			padding: 5px 10px;
+			border-radius: 5px;
+			bottom: 60px;
+			left: 25%;
+			position: absolute;
+			text-shadow: 0.1em 0.1em 0.05em #333;
+			display: none;
+
+			-webkit-transform: rotate(-20deg);
+			-moz-transform: rotate(-20deg);
+			-ms-transform: rotate(-20deg);
+			transform: rotate(-20deg);
+		}
+
+	</style> 
+</head>
+<body>
+
+<div id="promoNode"></div>	
+	
+
+	<h2>Horizontal Flip</h2>
+	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+				front
+			</div>
+			<div class="back">
+				back
+			</div>
+		</div>
+	</div>
+	<br /><br />
+
+	
+</div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+ .post-avatar {
+    border-radius: 0px;
+    float: right;
+    background-color:green;
+    }
+    
+    .post-avatar:hover{
+      border-radius: 50px;
+    background:#F09979;
+    }
+  
+
+
+#abouttab:hover
+{
+	color:white;
+background-color:#3D1F00; 
+}
+#eventstab:hover
+{	color:white;
+    background-color:#3D1F00;
+}
+#sponsorstab:hover
+{
+	color:white;
+    background-color:#3D1F00;
+}
+#campustab:hover
+{
+	color:white;
+    background-color:#3D1F00;
+}
+#contacttab:hover
+{
+	color:white;
+    background-color:#3D1F00;
+}
+#mediatab:hover
+{
+	color:white;
+    background-color:#3D1F00;
+}
+#gallerytab:hover
+{
+	color:#FFFF01;
+}
+#udaantab:hover
+{
+	color:#FFFF01;
+}
+#stickerstab:hover
+{
+	color:#FFFF01;
+}
+#iniativestab:hover
+{
+	color:#FFFF01;
+}
+#alcher14tab:hover
+{
+	color:#FFFF01;
+}
+#resultstab:hover
+{
+	color:#FFFF01;
+}
+
+#teamtab:hover
+{
+    color:#FFFF01;
+}
+#muntab:hover
+{
+	color:#FFFF01;
+}
+    .result{
+    	width: 30%;
+    	height:70%;
+    	display: none;
+    	padding-top: 30px;
+    	padding-left: 10px;
+    	font-size: 20px;
+    	top: 10%;
+    	position: absolute;
+    	right: 0%;
+    	background-color: yellow;
+    	border-radius:20%	;
+    }
+     #test{
+    	width: 30%;
+    	height:100%;
+    	display: none;
+    	padding-top: 30px;
+    	padding-left: 10px;
+    	font-size: 20px;
+    	top: 0%;
+    	position: absolute;
+    	right: 0%;
+    	background-color: yellow;
+    	border-radius:20%	;
+    }
+
+
+#menuwrapper ul, #menuwrapper ul li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+    #menuwrapper{
+    	position: absolute;
+    	top:13%;
+    	left:10%;
+    }
+ 
+/* We apply background color and border bottom white and width to 150px */
+#menuwrapper ul li{
+    background-color:yellow;
+    border-bottom:solblackx white;
+    width:200px;
+    height:35px;
+    cursor:pointer;
+    /*padding-top:15px;*/
+    font-size: 15px;
+    text-align: center;
+}
+ 
+/* We apply the background hover color when user hover the mouse over of the li component */
+#menuwrapper ul li:hover{
+    background-color:#B29980;
+    position:relative;
+}
+ 
+/* We apply the link style */
+#menuwrapper ul li a{
+    
+    color:white;
+    display:inline-block;
+    text-decoration:none;
+}
+ 
+/**** SECOND LEVEL MENU ****/
+/* We make the position to absolute for flyout menu and hidden the ul until the user hover the parent li item */
+#menuwrapper ul li ul{
+    position:absolute;
+    display:none;
+}
+ 
+/* When user has hovered the li item, we show the ul list by applying display:block, note: 150px is the individual menu width.  */
+#menuwrapper ul li:hover ul{
+    left:201px;
+    top:0px;
+    display:block;
+    text-align: center;
+}
+ 
+/* we apply different background color to 2nd level menu items*/
+#menuwrapper ul li ul li{
+    background-color:yellow;
+    color: black;
+}
+ 
+/* We change the background color for the level 2 submenu when hovering the menu */
+#menuwrapper ul li:hover ul li:hover{
+    background-color:#B29980;
+    color: white;
+   
+}
+ 
+/* We style the color of level 2 links */
+#menuwrapper ul li ul li a{
+    color:#454444;
+    display:inline-block;
+    width:120px;
+}
+ 
+/* Clear float */
+.clear{
+    clear:both;
+}
+ .img{
+    cursor:pointer;
+    padding-bottom: 2px;
+  }
+
+img{
+    cursor:pointer;
+    padding-bottom: 2px;
+  }
+#one{
+	
+    /* Rotate div */
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg); /* Standard syntax */
+}
+#two{
+	
+    /* Rotate div */
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg); /* Standard syntax */
+}
+#three{
+	
+    /* Rotate div */
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg); /* Standard syntax */
+}
+#four{
+	
+    /* Rotate div */
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+    transform: rotate(20deg); /* Standard syntax */
+}
+#five{
+	
+    /* Rotate div */
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg); /* Standard syntax */
+}
+#six{
+	
+    /* Rotate div */
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg); /* Standard syntax */
+}
+#seven{
+	
+    /* Rotate div */
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg); /* Standard syntax */
+}
+#eight{
+	
+    /* Rotate div */
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg); /* Standard syntax */
+}

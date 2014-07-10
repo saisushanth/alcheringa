@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" language="javascript">// <![CDATA[
+    var current="test";
+function showHide(x) {
+    
+    var ele = document.getElementById(current);
+    ele.style.display = "none";
+    ele = document.getElementById(x);
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+      }
+      else {
+        ele.style.display = "block";
+    }
+    current=x;
+
+    }
+</script>
+<style> 
+img{
+    cursor:pointer;
+    padding-bottom: 2px;
+  }
+
+</style>
+</head>
+<body>
+   <div style="width:70%;height:60%;position:absolute;top:10%;left:10%;background-color:#996633">
+   <div id="test" style="position:absolute;left:50%;width:50%;height:100%;display:block"><p>Media articles</p></div>
+   <div id="one" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="1.png" style="top:0%;width:100%;height:100%"/></div>
+   <div id="two" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="2.png" style="top:0%;width:100%;height:100%"/></div>
+   <div id="three" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="3.jpg" style="top:0%;width:100%;height:100%"/></div>
+   <div id="four" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="4.jpg" style="top:0%;width:100%;height:100%"/></div>
+   <div id="five" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="5.png" style="top:0%;width:100%;height:100%"/></div>
+   <div id="six" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="6.png" style="top:0%;width:100%;height:100%"/></div>
+   <div id="seven" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="7.png" style="top:0%;width:100%;height:100%"/></div>
+   <div id="eight" style="position:absolute;left:50%;width:50%;height:100%;display:none"><img src="8.png" style="top:0%;width:100%;height:100%"/></div>
+   <div style="position:absolute;height:100%;width:50%">
+     <img id="one" src="1.png" onmouseover="return showHide('one');" href="#" style="top:0.5%;width:24.5%;position:absolute;height:49.50%"/>
+     <img id="two" src="2.png" onmouseover="return showHide('two');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:25%;top:0.5%"/>
+     <img id="three" src="3.jpg" onmouseover="return showHide('three');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:50%;top:0.5%"/>
+     <img id="four" src="4.jpg" onmouseover="return showHide('four');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:75%;top:0.5%"/>
+     <img id="five" src="5.png" onmouseover="return showHide('five');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:0%;top:50.5%"/>
+     <img id="six" src="6.png" onmouseover="return showHide('six');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:25%;top:50.5%"/>
+     <img id="seven" src="7.png" onmouseover="return showHide('seven');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:50%;top:50.5%"/>
+     <img id="eight" src="8.png" onmouseover="return showHide('eight');" href="#" style="width:24.5%;position:absolute;height:49.50%;left:75%;top:50.5%"/>
+   </div>
+</div>
+</body>
+</html>

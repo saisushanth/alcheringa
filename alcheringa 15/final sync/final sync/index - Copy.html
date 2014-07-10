@@ -1,0 +1,995 @@
+<!DOCTYPE>
+<html>
+<head>
+
+	<link rel="icon" type="image/gif" href="images/alcherlady.png" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="css_flyoutverticalmenu.css" type="text/css" rel="Stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/team_main.js"></script>
+  <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+
+		<script src="js/file.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index_events.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/team_main.css">
+    <link rel="stylesheet" type="text/css" href="css/pendulum.css">
+    <title>Alcheringa '15 Beta</title>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51835012-1', 'alcheringa.in');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+
+		$(document).ready(function() {
+			window.location.href = "#item1";
+		
+
+			$('a.panel').click(function () {
+
+				$('a.panel').removeClass('selected');
+				$(this).addClass('selected');
+				
+				current = $(this);
+				
+				$('#wrapper').scrollTo($(this).attr('href'), 800);		
+				
+				return false;
+			});
+
+			$(window).resize(function () {
+				resizePanel();
+			});
+			
+		});
+
+		function resizePanel() {
+
+			width = $(window).width();
+			height = $(window).height();
+
+			mask_width = width * $('.item').length;
+				
+			$('#debug').html(width  + ' ' + height + ' ' + mask_width);
+				
+			$('#wrapper, .item').css({width: width, height: height});
+			$('#mask').css({width: mask_width, height: height});
+			$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
+				
+		}
+		
+		function pop(div) {
+				document.getElementById(div).style.display = 'block';
+			}
+			function hide(div) {
+				document.getElementById(div).style.display = 'none';
+			}
+			//To detect escape button
+			document.onkeydown = function(evt) {
+				evt = evt || window.event;
+				if (evt.keyCode == 27) {
+					hide('popDiv');
+				}
+			};
+
+		
+		
+	</script>
+
+
+
+</head>
+<body style="background-color:#B56C47;overflow-x:hidden">
+
+	<div id="screenone" style="height:100%;width:100%;left:0%;top:0%;position:absolute;background-color:#B56C47">
+	
+	<div style="position:absolute;width:100%;height:30%;top:30%;left:25%;">
+<p style="font-family:arial;font-size:20px">THE COUNTDOWN . . .</p>
+<!-- START COUNTDOWN -->
+
+
+<script src="countdown.js" type="text/javascript"></script>
+<script type="application/javascript">
+
+var myCountdownTest = new Countdown({
+								 	year	: 2015,
+									month	: 1, 
+									day		: 1,
+									width	: 700, 
+									height	: 120
+									});
+
+
+
+</script>
+<!-- END COUNTDOWN -->
+
+	</div>
+	</div>
+
+	<div id="screentwo" style="height:100%;width:100%;left:0%;top:100%;position:absolute;z-index:35;">
+
+	<!-- -------------------------- TOP TABS    ---------------------------- -->
+
+		
+		
+
+		 <div style="height:10%;width:100%;top:0%;left:0%;position:absolute;cursor:pointer;background-color:none;color:#525454;font-size:16pt;z-index:36;font-family: 'Special Elite', cursive;">
+        
+        <div class="a" id="abouttab" style="left:10%;height:100%;top:30%;position:absolute;text-align:center;" onclick="change('#about')">
+        ALCHERINGA 2015
+        </div>
+        <div class="a" id="eventstab" style="left:30%;height:100%;top:30%;position:absolute;text-align:center;" onclick="change('#events');">
+        EVENTS
+        </div>
+        <div class="a" id="sponsorstab" style="left:40%;height:100%;top:30%;position:absolute;text-align:center;" onclick="change('#sponsors')">
+        SPONSORS
+        </div>
+        <div class="a" id="campustab" style="left:53%;height:100%;top:30%;position:absolute;text-align:center;" onclick="change('#campus');">
+        CAMPUS AMBASSDORS
+        </div>
+        <div class="a" id="mediatab" style="height:100%;width:10%;left:73%;top:30%;position:absolute;text-align:center;" onclick="change('#media');">
+        MEDIA
+        </div>
+        <div class="a" id="contacttab" style="left:85%;height:100%;top:30%;position:absolute;text-align:center;" onclick="change('#contact');">  
+        CONTACTS
+        </div>
+
+   </div>
+
+<!-- ---------------------------- END TABS TOP ------------------------------  -->
+
+ 
+   <div id="about" style="position:absolute;top:15%;height:60%;width:60%;left:20%;font-family: 'Oswald', sans-serif;;font-size:15pt;color:white;">
+   <br>
+   <br>
+   ALCHERINGA 2015
+   <br>
+         With a history of bringing Guwahati and the North-east into the spotlight, Alcheringa starts afresh for its 19th edition. Known for its fervent exhibition of art and culture, Alcheringa has played expert host to a variety of eminent artistes like the Michael Angelo Batio Swiss Folk Metal band Eluveitie, the Israeli Oriental Metal band Orphaned Land, Irish Folk Band Ciorras, classical maestros like Guilliano Modarelli and Anoushka Shankar, and of course Bollywood personalities such as Mohit Chauhan, Shankar-Ehsaan-Loy, Shilpa Rao, KK, Shaan and Sonu Nigam, to name a few.
+         <br>
+		     Witnessing a staggering attendance of over 50,000 people and 350 colleges over the 4-day fest, Alcheringa is hands-down, one of the biggest events in the Eastern region of the nation. The year 2015 promises to be bigger in all respects. So hold your breath and stay tuned, for the countdown to the "Eternal Dreamtime" begins now!
+   </div>
+
+
+<script>//KUSHAL CHAWLA-EVENTS-STARTING POINT</script>
+
+
+
+<div id="events" style="position:absolute;top:15%;height:75%;width:80%;left:10%;display:none;color:white;">
+	
+	<div id='topnavTut'>
+			<div class="top" style="left:0%;">
+			 <div class='topnav'><a href="#item1" class="panel">MUSIC</a></div>
+			</div>
+			<div class="top" style="left:11.1111%;">
+			 <div  class='topnav'><a href="#item2" class="panel">CLASS APART</a></div>
+			</div>
+			<div class="top" style="left:21%;">
+			 <div  class='topnav'><a href="#item3" class="panel">DANCE</a></div>
+			</div>
+			<div class="top" style="left:30.5%;width:16%">
+			 <div  class='topnav'><a href="#item4" class="panel">PERFORMING ARTS</a></div>
+			</div>
+			<div class="top" style="left:44.4444%;">
+			 <div  class='topnav'><a href="#item5" class="panel">SPORTS</a></div>
+			</div>
+			<div class="top" style="left:53%;width:13%" id="c">
+			 <div  class='topnav'><a href="#item6" class="panel">DIGITAL ARTS</a></div>
+			</div>
+			<div class="top" style="left:65%;">
+			 <div  class='topnav'><a href="#item7" class="panel">FINE ARTS</a></div>
+			</div>
+			<div class="top" style="left:75%;width:14%">
+			 <div  class='topnav'><a href="#item8" class="panel">MYSTERY BOX</a></div>
+			</div>
+			<div class="top" style="left:88.8888%;">
+			 <div  class='topnav'><a href="#item9" class="panel">ALFAAZ</a></div>
+			</div>
+		</div>
+
+
+	<div id="wrapper">
+	<div id="mask">
+        
+
+
+
+		<div id="item1" class="item">
+			<div id="basic">
+				<div class="head" style="left:15%;">
+					<div class="sub_head">
+					RAGA HIGH
+					</div>
+					<div class="sub_head">
+					VOICE OF ALCHERINGA
+					</div>
+					<div class="sub_head">
+					RHAPSODY
+					</div>
+				</div>
+
+				<div class="sub_data" style="left:35%;">
+					"Music" the word in itself is one complete mode of communication, a medium for the expressions. There is no one nowhere who can ever describe what music is. For some it is rock and roll, for some it is Metal, for some it is the Blues. Music in itself has no bounds no definitions. As Friedrich Nietzsche would say "Without music, life would be a mistake."
+				</div>
+			</div>
+		</div>
+
+		<div id="item2" class="item">
+			<div id="basic">
+				<div class="head" style="left:115%;">
+					<div class="sub_head">
+					ROCK-O-PHONIX
+					</div>
+					<div class="sub_head">
+					MR. & MS. ALCHERINGA
+					</div>
+					<div class="sub_head">
+					HAUTE COUTURE
+					</div>
+					<div class="sub_head">
+					CROSSFADE
+					</div>
+					<div class="sub_head">
+					ROADIEZ
+					</div>
+				</div>
+
+				<div class="sub_data" style="left:135%;">
+					"Living a normal life is just too mainstream..." If the above line voices your routine thoughts perfectly and you love adding elements of excitement to your daily monotonous rut, then Alcheringa presents an exhilarating module to bring your talent into the limelight. Fire up the stage with your spellbinding rock performance,win the hearts of the audience with your charm and audacity,let your multi-faceted personality do the talking as your confidence sparkles on stage while you celebrate your uniqueness. This category of events tests your mettle in some thrilling and unconventional competitions and gives you the rare opportunity of proving that you are une personne extraordinaire. So come forward and join us on this roller coaster ride through a plethora of fun-filled activities in the Class Apart module! 
+				</div>
+			</div>
+		</div>
+
+		<div id="item3" class="item">
+			<div id="basic">
+				<div class="head" style="left:215%;">
+					<div class="sub_head">
+					ELECTRIC HEELS
+					</div>
+					<div class="sub_head">
+					STEP UP
+					</div>
+					<div class="sub_head">
+					MOVES LIKE JAGGER
+					</div>
+					<div class="sub_head">
+					NAVRAS
+					</div>					
+				</div>
+
+				<div class="sub_data" style="left:235%;">
+					Remember the first time you walked on the stage? Remember that nervous bead of sweat that trickled down your brow when you looked at the crowd? Remember your heart pounding? .... That feeling still gives you the chills, doesn't it? But then the music starts. And you blank out. The world stops mattering. All that remains is just you, and the music. The crowd roars. The halls thunder. The lights flash... They see you spinning. They see you prancing. They see you move with the grace of a swan, with that exquisite expression on your face. But, little do they know, that you’ve been ferried somewhere far, far away, deep in a trance, lost in an Alcheringa!  
+				</div>
+			</div>
+		</div>
+
+		<div id="item4" class="item">
+			<div id="basic">
+				<div class="head" style="left:315%;">
+					<div class="sub_head">
+					THEATRIX
+					</div>
+					<div class="sub_head">
+					WHY SO SERIOUS ?
+					</div>
+					<div class="sub_head">
+					HALLA BOL
+					</div>
+					<div class="sub_head">
+					ED EDD N EDDY
+					</div>
+				</div>
+
+				<div class="sub_data" style="left:335%;">
+					When you are in this world, you can be a part of performing arts module in alcheringa. So many people prefer to live in drama because it's comfortable. It's like someone staying in a bad marriage or relationship - it's actually easier to stay because they know what to expect every day, versus leaving and not knowing what to expect. Drama has the power to express your thoughts in public and work for a social cause.Comedy is what everyone want from life.If you are a good stand up comedian and you can make people laugh then surely this competition was made for you.And yes if you have never been a part of any drama club and this is the time to start.We do have a competition for you. 
+				</div>
+			</div>
+		</div>
+
+		<div id="item5" class="item">
+			<div id="basic">
+				<div class="head" style="left:415%;">
+					<div class="sub_head">
+					5 ON 5 FOOTBALL
+					</div>
+					<div class="sub_head">
+					ARM WRESTLING
+					</div>					
+				</div>
+
+				<div class="sub_data" style="left:435%;">
+					"A trophy carries dust. Memories last forever." Alcheringa invites you all to unleash your sports' potential in circumstances where your mettle and skills will be put to test unlike any other. Battle the best teams from all over the nation, fight it till the end and walk out like a Champion. Play Hard, Play Fair.
+				</div>
+			</div>
+		</div>
+
+		<div id="item6" class="item">
+			<div id="basic">
+				<div class="head" style="left:515%;">
+					<div class="sub_head">
+					CUSTOM BRUSH
+					</div>
+					<div class="sub_head">
+					MINIMAL POSTER
+					</div>
+					<div class="sub_head">
+					AD-DICT
+					</div>
+					<div class="sub_head">
+					SNAPTHRILLZ
+					</div>
+					<div class="sub_head">
+					FILMAKA
+					</div>
+				</div>
+
+				<div class="sub_data" style="left:535%;">
+					Man has always been eager to express himself; be it canvas and clay, or images and videos. The brush has been replaced by the pointer, for art has gone the digital way.This module provides you with a wonderful opportunity to set free your creativity. The best of digital aficionados will battle it out to shock, to amaze and enthrall all with their art, but only the most creative will stand out. A conglomeration of like-minded designers and innovators, digital arts puts up a grand stage for innovative ideas and establishes the prowess of digitisation. Each event will be a great platform to test your skill-set to the maximum, and add more to it. Come be a part of this adventure and paint the world red with us under the Digital Arts Module. 
+				</div>
+			</div>
+		</div>
+
+		<div id="item7" class="item">
+			<div id="basic">
+				<div class="head" style="left:615%;">
+					<div class="sub_head">
+					THE BIG PICTURE
+					</div>
+					<div class="sub_head">
+					INK THE TEE
+					</div>
+					<div class="sub_head">
+					STROKES OF GENIUS
+					</div>
+					<div class="sub_head">
+					COMIC CON
+					</div>
+				</div>
+
+				<div class="sub_data" style="left:635%;">
+					"Painting is poetry that is seen rather than felt, and poetry is painting that is felt rather than seen" said Leonardo da Vinci When words aren't enough Art will guide you to voice your thoughts. Do you find yourself craving for a paintbrush while trying to explain yourself? Are words never enough for you to voice your thoughts? Is art the Prophet that guides you and helps you understand your individuality? You my friend might be the the artist Alcheringa is looking for! Let your passion and talent drive you to create the masterpieces. 
+				</div>
+			</div>
+		</div>
+
+		<div id="item8" class="item">
+			<div id="basic">
+				
+
+				<div class="sub_data" style="left:735%;">
+					Tighten your seat belts and prepare yourselves for a new nasty ride. The box of miracles and secrets is waiting for you. Come and explore a whole new world within. Experience the fun like you never had and you never will.The mystery box gives everyone a chance to become the ultimate winner without even the need of some pre-requisite talent or prepration. 
+				</div>
+			</div>
+		</div>
+
+		<div id="item9" class="item">
+			<div id="basic">
+				<div class="head" style="left:815%;">
+					<div class="sub_head">
+					JUST A MINUTE
+					</div>
+					<div class="sub_head">
+					ZEPHYR
+					</div>
+					<div class="sub_head">
+					MUSE
+					</div>
+				</div>
+
+				<div class="sub_data" style="left:835%;">
+					Everyone can do the possible stuff, but respected is the person who does the impossible. We are here to give you an revering opportunity to do the impossible, to make unforgettable memories and gain valuable experiences. Just hop on the stage with all you wit and wisdom. It is the time to take hesitation out and play like a free soul. But remember nothing comes in handy, so if you have talent to numb the audience, the charm to mesmerize them and the confidence to set their eyes rolling, then come join us. Strangers will be met, talks will be held and tasks will be performed, so fasten your belts and come on board with us in the mind boggling informal activities.  
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+      </div>
+
+
+<script>//KUSHAL CHAWLA-EVENTS-ENDING POINT</script>
+
+
+
+
+   <div  id="sponsors"style="position:absolute;top:25%;height:65%;width:60%;right:20%;display:none;color:white;z-index:45;">
+    <br><br>
+   <h1>PREVIOUS YEAR SPONSORS</h1>
+    <div style="text-decoration:none;font-size:20px;">
+    <div style="left:10%;top:25%;height:10%;width:15%;position:absolute;background-color:black;color:white;"><a href="../../../alcher2013/sponsor/2009.html" target="blank" style="text-decoration:none"> Sponsors 2009 </a></div>
+    <div style="left:10%;top:40%;height:10%;width:15%;position:absolute;background-color:black;color:white;"><a href="../../../alcher2013/sponsor/2010.html" target="blank" style="text-decoration:none"> Sponsors 2010 </a></div>
+    <div style="left:30%;top:25%;height:10%;width:15%;position:absolute;background-color:black;color:white;"><a href="../../../alcher2013/sponsor/2011.html" target="blank" style="text-decoration:none"> Sponsors 2011 </a></div>      
+    <div style="left:30%;top:40%;height:10%;width:15%;position:absolute;background-color:black;color:white;"> <a href="../../../alcher2013/sponsor/2012.html" target="blank" style="text-decoration:none"> Sponsors 2012 </a> <br></div>      
+    <div style="left:10%;top:55%;height:10%;width:15%;position:absolute;background-color:black;color:white;"><a href="../../../alcher2013/sponsor/index.html" target="blank" style="text-decoration:none"> Sponsors 2013 </a> <br></div>      
+             
+             
+</div>
+   </div>
+   <div id="campus" style="position:absolute;top:15%;height:75%;width:60%;right:20%;display:none;overflow-y:scroll;color:white;">
+   <br><br><br>
+   <b>Fill the form to register yourself as a Campus Ambassdor</b>
+           <?php
+              if(!empty($_POST['submit']))
+              {
+                include("opendb.php");
+                $sql = "INSERT INTO `campus_ambasdors`(`username`, `college`, `contact1`, `contact2`, `email`, `res_address`, `colg_address`) VALUES ('".$_POST['username']."','".$_POST['college']."','".$_POST['contact1']."','".$_POST['contact2']."','".$_POST['email']."','".$_POST['resaddress']."','".$_POST['colgaddress']."')";
+                $result = mysql_query($sql);
+                if(!$result)
+                {
+                  echo "Error in connecting to database" ;
+                }
+                else
+                {
+                  echo "Your details are collected. Our volunteer will get back to you shortly";
+                }
+              }
+        ?>
+
+
+       <form action="index.php"  enctype="multipart/form-data" method="post" style="left:10%;position:absolute;">
+  
+        <b>Campus Ambasdor Registration</b>
+          <p><label for="username">Your Name</label><br>
+            <input id="username" name="username" size="30" type="text" /></p>
+          <p><label for="college">Your College</label><br />
+            <input id="college" name="college" size="30" type="text" /></p>
+          <p><label for="contact1">Your Mobile Number</label><br />
+            <input id="contact1" name="contact1" size="20" type="text" /></p>
+          <p><label for="contact2">Your Alternate Number</label><br />
+            <input id="contact2" name="contact2" size="20" type="text" /></p>
+           <p><label for="email">Your Email ID</label><br />
+            <input id="email" name="email" size="30" type="text" /></p>
+          <p><label for="resaddress">Your Current Residential Address</label><br />
+            <textarea  cols="30" id="resaddress" name="resaddress" rows="5"></textarea></p>
+          <p><label for="colgaddress">Your College Address</label><br />
+            <textarea  cols="30" id="colgaddress" name="colgaddress" rows="5"></textarea></p>
+          <p><input  id="form_submit" name="submit" type="submit" value="Submit your details" /></p>
+          </form>
+   </div>
+   <div id="contact" style="position:absolute;top:15%;height:75%;width:60%;right:20%;display:none;overflow-y:scroll;color:white;">
+    <br><br><br>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >ANUPAM ANAND <br> Convenor <br> anupam@alcheringa.in <br> +918473994735</span>
+     <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/audacious.anupam?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+   </div>
+    <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:80%;left:10%;position:absolute" >ABID HAQUE <br> National Event CO-ordinator <br> abid@alcheringa.in <br> +918473894077</span>
+     <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/fiasco.abid?fref=ts" target="blank"><img src="images/abid.jpg" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >KUNAL VERMA <br> Head - Marketing <br> kunal@alcheringa.in <br> +919085307842</span>
+   <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/Kunal.Verma93?fref=ts" target="blank"><img src="images/kunal.jpg" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:60%;left:20%;position:absolute" >SUKUMAR DAS <br> Head - Marketing <br> sukumar@alcheringa.in <br> +918723058316</span>
+    <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/sukumar.das.5851?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >UJJWAL KANSAL <br> Head - Marketing  <br>  ujjawal@alcheringa.in <br> +917896368777</span>
+     <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/ujjwal.kansal.420?fref=ts" target="blank"> <img src="images/ujjwal.jpg" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:80%;left:10%;position:absolute" >SAI SUSHANTH AKULA <br> Head - Web Operations <br> sushanth@alcheringa.in <br> +918011025452</span>
+    <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/sushanth.vikky" target="blank"><img src="images/sushanth.png" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >SAIRAMKOTI  AMGOTH<br> Head - Public Relations  <br> sairamkoti@alcheringa.in <br> +918399076599</span>
+     <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/sairamkoti?fref=ts" target="blank"><img src="images/sairamkoti.png" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:60%;left:20%;position:absolute" >MOUNIKA MANTRI <br> Head - Public Relations  <br> mounika@alcheringa.in <br> +918473994736</span>
+     <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/mounika.mantri?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >VYSAK A S <br> Head - Creatives <br> vysak@alcheringa.in <br> +917896365690</span>
+     <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/getvysak.a.s?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:60%;left:20%;position:absolute" >SAMADRITA DAS<br> Head - Creatives <br> samadrita@alcheringa.in <br> +918473995091</span>
+     <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/samadrita.das.5?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >ADITYA DHAWLE <br> Head - Events <br> aditya@alcheringa.in <br> +919085292566</span>
+     <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/adityadhwale?fref=ts" target="blank"><img src="images/aditya.jpg" height="100" width="100"></a></span>
+   </div>
+   <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:60%;left:20%;position:absolute" >SHREYA RAINA <br> Head - Events <br> shreya@alcheringa.in <br> +918473995003</span>
+     <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/shreya.raina.98?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+   </div>
+    <div id="contacts" style="height:20%;width:30%;position:relative;left:0%">
+     <span style="width:60%;left:60%;position:absolute" >ANSHUL PADYAL <br> Head - Media <br> anshul@alcheringa.in <br> +919085033138</span>
+     <span style="width:50%;left:0%;position:absolute"><a href="https://www.facebook.com/anshul.padyal?fref=ts" target="blank"><img src="images/anshul.jpg" height="100" width="100"></a></span>
+   </div>
+    <div id="contacts" style="height:20%;width:30%;position:relative;left:40%">
+     <span style="width:60%;left:20%;position:absolute" >DIPTI KUMARI <br> Head - Accounts <br> dipti@alcheringa.in <br> +917896359348</span>
+     <span style="width:50%;left:90%;position:absolute"><a href="https://www.facebook.com/dipti.kumari.3511?fref=ts" target="blank"><img src="images/alcherlady.png" height="100" width="100"></a></span>
+    </div>
+    <br>
+    <br>
+   </div>
+
+
+   <div id="alcher14" style="position:absolute;top:15%;height:75%;width:60%;right:20%;display:none;color:white;">
+   <br><br>
+   <h1>ALCHERINGA ATLANTIS </h1>
+        The North-east witnesses a colossal fest on the onset of spring each year. 2014 was no different. Alcheringa scaled itself up, and raised the bar higher with this edition. Themed as "Atlantis" this year, the fest drew huge crowds, exceeding 50,000 from the North-east and beyond. Guwahati witnessed scintillating performances from the legendary Michael Angelo Batio and Undying Inc, thrilling metal purists of the region. The highlight of the Bollywood night, Crescendo was a mesmerising performance from Shilpa Rao - who wooed the crowd with an amazing performance. Villalobos Brothers from Mexico highlighted "Saaz", the Classical night and pretty much knocked the crowd out!
+        <br>
+    		Alcheringa Atlantis also saw the maiden edition of the IITG Model United Nations. Headbangers got their piece with a three day long Rock-o-Phonix, and the crowd revelled at the astounding performances in Electric heels, and the jaw dropping models participating in Haute Couture and Femina Miss India (judged by former Miss India Earth - Miss Shobhitha Dhulipala). The 4 day long fest marked one of the most happening dates of the North-east, and aims at getting bigger and better with each coming edition.
+      <br>
+        <a href="../home/index.html" target="blank"> CLICK HERE TO ENTER THE WORLD OF ATLANTIS</a>
+
+   </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="web_team" style="position:absolute;top:15%;height:75%;width:60%;right:25%;display:none;">
+
+<br /><br />
+<h3 id="head">Web Development and Design Team</h3>
+<hr width="90%">
+
+<div id="mem1" onmouseover="data1()" onmouseout="ndata1()"><div class="tag" style="font-size:15px"><b>DEVELOPER</b></div><img src="images/sushanth_bhaiya.png" style="width:100%;height:100%"></div>
+<div id="text1" style="font-size:13px"><b>SAI SUSHANTH</b><hr>Email : sushanth4617@gmail.com<br> Contact No: +918011025452<br>B.TECH 3rd Year,CSE</div>
+
+
+<div id="mem2" onmouseover="data2()" onmouseout="ndata2()"><div class="tag" style="font-size:15px"><b>DEVELOPER</b></div><img src="images/kushal.jpg" style="width:100%;height:100%"></div>
+<div id="text2" style="font-size:13px"><b>KUSHAL CHAWLA</b><hr>Email : kushalchawla18@gmail.com<br> Contact No: +918876906566<br>B.TECH 2nd Year,CSE</div>
+
+
+
+<div id="mem3" onmouseover="data3()" onmouseout="ndata3()"><div class="tag" style="font-size:15px"><b>DESIGNER</b></div><img src="images/vysak.jpg" style="width:100%;height:100%"></div>
+<div id="text3" style="font-size:13px"><b>VYSAK AS</b><hr>Email : vysak@alcheringa.in<br> Contact No: +917896365690<br>B.Des 3rd Year</div>
+
+
+<div id="mem4" onmouseover="data4()" onmouseout="ndata4()"><div class="tag" style="font-size:15px"><b>DEVELOPER</b></div><img src="images/rahul.jpg" style="width:100%;height:100%">
+
+</div>
+<div id="text4" style="font-size:13px"><b>RAHUL NAGURTHA</b><hr>Email : nagurtha.rahul@gmail.com<br> Contact No: +919085291811<br>B.TECH 2nd Year,CSE</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <div id="results" style="position:absolute;top:15%;height:75%;width:60%;right:25%;display:none;overflow-y:scroll;">
+   <br><br>
+   <div id="menuwrapper">
+    <ul>
+        <li>DANCE
+             <ul>
+                <li  onclick="return showHide('electric');">ELECTRIC HEELS</li>
+                <li  onclick="return showHide('step');">STEP UP</li>
+                <li  onclick="return showHide('moves');">MOVES LIKE JAGGER</li>
+                <li  onclick="return showHide('navras');">NAVRAS</li>
+            </ul>
+        </li>
+            
+        <li>MUSIC
+            <ul>
+                <li  onclick="return showHide('raga');">RAGA HIGH</li>
+                <li  onclick="return showHide('voice');">VOICE OF ALCHER</li>
+                <li  onclick="return showHide('rhapsody');">RHAPSODY</li>
+            </ul>
+        </li>
+        <li>PERFORMING ARTS
+            <ul>
+                <li  onclick="return showHide('theatrix');">THEATRIX</li>
+                <li  onclick="return showHide('halla');">HALLA BOL</li>
+                <li  onclick="return showHide('serious');">Y SO SERIOUS</li>
+                <li  onclick="return showHide('edd');">ED EDD N EDDY</li>
+            </ul>
+        </li>
+        <li>CLASS APART
+            <ul>
+                <li  onclick="return showHide('haute');">HAUTE COUTURE</li>
+                <li  onclick="return showHide('miss');">MR N MS ALCHERINGA</li>
+                <li  onclick="return showHide('cross');">CROSS FADE</li>
+                <li  onclick="return showHide('roadiez');">ROADIEZ</li>
+                <li  onclick="return showHide('rockon');">ROCK O PHONIX</li>
+            </ul>
+        </li>
+        <li>FINE ARTS
+            <ul>
+
+                <li  onclick="return showHide('strokes');">STROKES OF GENIOUS</li>
+                <li  onclick="return showHide('big');">BIG PICTURE</li>
+                <li  onclick="return showHide('ink');">INK THE TEE</li>
+                <li  onclick="return showHide('comic');">COMIC CON</li>
+            </ul>
+        </li>
+        <li>ALFAAZ<ul>
+                <li  onclick="return showHide('pd');">PD</li>
+                <li  onclick="return showHide('good');">WHATS THE GOOD WORD</li>
+                <li  onclick="return showHide('just');">JUST A MIN</li>
+                <li  onclick="return showHide('muse');">MUSE</li>
+                <li  onclick="return showHide('zep');">ZEPHYR</li>
+
+            </ul>
+        </li>
+        <li>QUIZ FEST
+             <ul>
+                <li  onclick="return showHide('flames');">THE FLAMES QUIZ</li>
+                <li  onclick="return showHide('general');">THE GENERAL QUIZ</li>
+                <li  onclick="return showHide('business');">THE BUSINESS QUIZ</li>
+                <li  onclick="return showHide('themeone');">THEME QUIZ 1</li>
+                <li  onclick="return showHide('themetwo');">THEME QUIZ 2</li>
+                <li  onclick="return showHide('india');">THE INDIA QUIZ</li>
+            </ul>
+        </li>
+        <li>SPORTS
+             <ul>
+                <li  onclick="return showHide('on');">5 ON 5</li>
+                <li  onclick="return showHide('arm');">ARM WRESTLING</li>
+            </ul>
+        </li>
+        <li>DIGITAL ARTS
+            <ul>
+                <li  onclick="return showHide('cus');">CUSTOM BRUSH</li>
+                <li  onclick="return showHide('sna');">SNAPTHRILLZ</li>
+                <li  onclick="return showHide('min');">MINIMIZE</li>
+                <li  onclick="return showHide('dir');">DIRECTORS CUT</li>
+                <li  onclick="return showHide('addict');" >ADDICT</li>                
+            </ul>
+        </li>
+
+    </ul>
+</div>
+
+    <div id="test"  >
+      <p>Alcheringa 2014 Results</p>
+       </div>
+    <br><br>      
+       <div class="result" id="electric">Electric Heels:
+              <ol>
+                   <li>IIT Kgp</li>
+                   <li>Hoppers</li>
+                   <li>santosh and dance acadmy</li>
+              </ol>
+       </div>
+       <div class="result" id="step">Step Up:
+              <ol>
+              	   <li>Antique Bullets</li>
+              	   <li>Hey baby</li>
+              </ol>
+       </div>
+       <div class="result" id="moves">Moves Like Jagger:
+              <ol>
+              	   <li>Kuheli Saha</li>
+              	   <li>Dharan Baufor</li>
+              	   <li>Abhi Khajuria</li>
+              </ol>
+       </div>
+       <div class="result" id="navras">Navras:
+              <ol>
+              	   <li>Bhaswati</li>
+              	   <li>Violina</li>
+              	   <li>Dipandita</li>
+              </ol>
+       </div>
+       <div class="result" id="raga">Raga High:
+              <ol>
+              	   <li>The Royal Strings</li>
+              	   <li>13th RIB</li>
+              	   <li>Swasthik</li>
+
+              </ol>
+       </div>
+       <div class="result" id="voice">Voice Of Alcher:
+              <ol>
+              	   <li>Kadimul Islam</li>
+              	   <li>Abishek Panial</li>
+              	   <li>Fardik Yashik</li>
+              </ol>
+       </div>
+       <div class="result" id="rhapsody">Rhapsody:
+              <ol>
+              	   <li>Neelav Sharma</li>
+              	   <li>Nizwam</li>
+              	   <li>Abheek</li>
+              </ol>
+       </div>
+       <div class="result" id="theatrix">Theatrix:
+              <ol>
+              	   <li>Natraj 1</li>
+              	   <li>Modern English School</li>
+              </ol>
+       </div>
+       <div class="result" id="halla">Halla Bol:
+              <ol>
+              	   <li>IITG</li>
+              	   <li>SMIT </li>
+              	   <li>SHIATS</li>
+              </ol>
+       </div>
+       <div class="result" id="serious">Y So Serious:
+              <ol>
+              	   <li>surabhi</li>
+              	   <li>Amitab</li>
+              </ol>
+       </div>
+       <div class="result" id="edd">Ed Edd n Eddy:
+              <ol>
+              	   <li>Train Journy</li>
+              	   <li>Super Heros</li>
+              </ol>
+       </div>
+       <div class="result" id="haute">Haute Couture:
+              <ol>
+              	   <li>JD Gwalior</li>
+              	   <li>Mizoram University</li>
+              	   <li>SHIATS</li>
+              </ol>
+       </div>
+       <div class="result" id="miss">Mr n Ms Alcheringa:
+              <ul>
+              	   <li>Kshitij</li>
+              	   <li>Dibyasree Pradan</li>
+              </ul>
+       </div>
+       <div class="result" id="cross">Cross Fade:
+              <ol>
+              	   <li>Jupitar</li>
+              	   <li>Helios</li>
+              </ol>
+       </div>
+       <div class="result" id="roadiez">Roadiez:
+              <ol>
+                   <li>Suraj Gurung</li>
+              </ol>
+       </div>
+       <div class="result" id="rockon">Rock O:
+              <ol>
+              	   <li>UDX</li>
+              	   <li>the last exorcists</li>
+              	   <li>four degrees of freedom</li> 
+              </ol>
+       </div>
+       <div class="result" id="strokes">Strokes of Genius:
+              <ol>
+              	   <li>Debojit Das</br>Suman Saha</li>
+              	   <li>Amar Hari</br>Kritika Rao</li>
+              </ol>
+       </div>
+       <div class="result" id="big">Big Picture:
+              <ol>
+              	   <li>Gautam Chakraboty</br>Nilotpar Kakati</br>Baskar Bakman</li>
+              	   <li>Shabnam Sinha</br>Manirood Zaman</br>Debu Sinha</li>
+              	   <li>Kumari Ghanisha Chauhan</br>Vivek Mayank</br>N.Akhil Sai</li>
+              </ol>
+       </div>
+       <div class="result" id="ink">Ink The Tee:
+              <ol>
+              	   <li>Manan Sarma</br>Siddarta Sinha</li>
+              	   <li>Kritika</br>Amar Hari</li>
+              	   <li>Somlee Gupta</br>Purbali Dhar</li>
+              </ol>
+       </div>
+       <div class="result" id="comic">Comic Con:
+              <ol>
+              	   <li>Tanya Kotnala</br>Komal Jain</li>
+              	   <li>Kasturi</br>Sheetal</br>Sharbari</br>Sukanya</li>
+              	   <li>Debajeet</br>Suman</br>Sumit</br>Sayana</li>
+              </ol>
+       </div>
+       <div class="result" id="pd">IITG MUN
+              <ol>
+              	   <li>Michael</br>Simnan</br>Modi</li>
+              	   <li>Gangotri</br>Pushpak</br>Manosh</li>
+              </ol>
+              <ul>
+              	   <li>Best Adjudicator:Jaskaran</li>
+              	   <li>Best Speaker:Michael</li>
+              	   <li>participant ceritficates</li>
+              </ul>
+       </div>
+       <div class="result" id="good">Whats The Good Word:
+              <ol>
+              	   <li>Ritesh</br>Molly</li>
+              </ol>
+       </div>
+       <div class="result" id="just">Just A Min:
+              <ol>
+              	   <li>Rashmi Saurab</li>
+              </ol>
+       </div>
+       <div class="result" id="muse">Muse:
+              <ol>
+              	   <li>Jayshree Dutta</li>
+              </ol>
+       </div>
+       <div class="result" id="zep">Zephyr:
+              <ol>
+              	   <li>Sauvik Dey (poetry)</li>
+              	   <li>Roktim Bhattachariya (winner short fiction)</li>
+              </ol>
+       </div>
+       <div class="result" id="flames">The Flames Quiz:
+              <ol>
+              	   <li>Ronu Vikram</br>Vishal Vaibhav</li>
+              	   <li>Maharnab Hazarika</br>Biswajit Sarma</li>
+              	   <li>Manan Bhutani</br>Mangesh Joshi</li>
+              </ol>
+       </div>
+       <div class="result" id="general">The General Quiz:
+              <ol>
+              	   <li>Maharnab Hazarika</br>Biswajit Sarma</li>
+              	   <li>Aditya Prabhu</br>Himanshu Uprati</li>
+              	   <li>Manon Bhutani</br>Mangesh Joshi</li>
+              </ol>
+       </div>
+       <div class="result" id="business">The Business Quiz:
+              <ol>
+              	   <li>Ranu Vikram</br>Vishal Vaibhav</li>
+              	   <li>Aditya Prabhu</br>Ankit Bansal</li>
+              	   <li>Kalyan Lakhar</li>
+              </ol>
+       </div>
+       <div class="result" id="themeone">Theme Quiz1:
+              <ol>
+              	   <li>Aditya Prabhu</br>Himanshu Upreti</li>
+              	   <li>Priyanka Gaur</br>Kumar Abhishek</li>
+              	   <li>Maharnab Hazarika</br>Biswajit Sarma</li>
+              </ol>
+       </div>
+       <div class="result" id="themetwo">Theme Quiz 2:
+              <ol>
+              	   <li>TBD</li>
+              </ol>
+       </div>
+       <div class="result" id="india">The India Quiz:
+              <ol>
+              	   <li>Nauman Ali</br>Preetish Kakoti</li>
+              	   <li>Manan Bhutani</br>Mangesh Joshi</li>
+              	   <li>Rajat Saha</br>Saurabh Kumar Verma</li>
+              </ol>
+       </div>
+       <div class="result" id="on">5 on 5:
+              <ol>
+              	   <li>diphu govt clg</li>
+              </ol>
+       </div>
+       <div class="result" id="arm">Arm Wrestling:
+              <ol>
+              	   <li>Devraj Sharma</li>
+              	   <li>Moneswar Regel</li>
+              	   <li>Sharian</li>
+              </ol>
+       </div>
+       <div class="result" id="cus">Custom brush:
+              <ol>
+              	   <li>Amlan Baishya</li>
+              	   <li>Mayankk Jain</li>
+              </ol>
+       </div>
+       <div class="result" id="sna">Snapthrillz:
+              <ol>
+              	   <li>Shravani kamal</li>
+              	   <li>Annsh Singh</li>
+              </ol>
+       </div>
+       <div class="result" id="min">Minimize:
+              <ol>
+              	   <li>Mayankk Jain</li>
+              	   <li>Somesh Yadav</li>
+              </ol>
+       </div>
+       <div class="result" id="dir">Directors cut:
+              <ol>
+              	   <li>Bomaby Dreams (IIT Bombay)</li>
+              	   <li>The Last Cognizance (IIT Guwahati)</li>
+              	   <li>Help Me (BACKLASH PRODUCTION)</li>
+              </ol>
+       </div>
+        <div class="result" id="addict">Addict:
+              <ol>
+              	   <li>Abhishek Verma</li>
+              </ol>
+       </div>
+   </div>
+
+
+
+   <div id="initiatives" style="position:absolute;top:15%;height:65%;width:80%;left:10%;display:none;">
+    <br><br><br>
+  
+   <div style="position:absolute;height:20%;width:20%;color:white;font-size:30pt;left:10%;top:10%;background-image:url('images/aids.jpg');background-size:cover;text-align:center"><a href="http://www.telegraphindia.com/1060128/asp/guwahati/story_5772393.asp"  style="text-decoration:none;" height="100" width="100" target="blank"><b>AIDS AWARENESS CAMPAIGN</b></a></div>
+
+    <div style="position:absolute;height:20%;width:20%;color:white;font-size:30pt;left:35%;top:10%;background-image:url('images/dolphins.jpg');background-size:cover;text-align:center"><a href="http://alcher08.blogspot.in/2007/09/dolphinor-penguin-why.html"  style="text-decoration:none;" height="100" width="100" target="blank"><b>SAVE GIGANTIC DOLPHINS</b></a></div>
+
+    <div style="position:absolute;height:20%;width:20%;color:white;font-size:30pt;left:60%;top:10%;background-image:url('images/dolphins.jpg');background-size:cover;text-align:center"><a href="http://candid24x7.com/alcheringa-2012/" alt="http://www.sentinelassam.com/northeast/story.php?sec=2&subsec=9&id=106371&dtP=2013-12-01&ppr=1"  style="text-decoration:none;" target="blank" height="100" width="100"><b>BLOOD DONATION CAMP</b></a></div>
+
+  <div style="position:absolute;height:20%;width:20%;color:white;font-size:30pt;left:10%;top:50%;background-image:url('images/north.jpg');background-size:cover;;text-align:center"><b>NORTH EAST UNEVILED</b></div>    
+
+   <div style="position:absolute;height:20%;width:20%;color:white;font-size:30pt;left:35%;top:50%;background-image:url('images/votes.jpg');background-size:cover;text-align:center"><b>#GAME OF VOTES</b></div>
+
+
+   <div style="position:absolute;height:20%;width:20%;color:white;font-size:30pt;left:60%;top:50%;background-image:url('images/votes.jpg');background-size:cover;text-align:center;text-decoration:none;"><a href="http://www.whichblankareyou.com/q/alcheringas-which-wc-team-should-you-support-quiz!#.U5vYV17q5k0.facebook"><b>FIFA QUIZ</b></a></div>
+
+   </div>
+
+ <div id="media" style="position:absolute;top:15%;height:75%;width:90%;left:3%;display:none">
+    
+     <div id="Layer1" style="position:absolute;top:0%;left:40%;width:60%;height:100%;overflow-x:scroll;"></div>
+       <div style="position:absolute;height:100%;width:40%">
+     <img id="one" src="images/1.png" onmouseover="showPic(this.src);" style="top:3%;width:25%;position:absolute;height:50%"/>
+     <img id="two" src="images/2.png" onmouseover="showPic(this.src);" style="width:30%;position:absolute;height:50%;left:25%;top:3%"/>
+     <img id="three" src="images/3.png" onmouseover="showPic(this.src);" style="width:30%;position:absolute;height:50%;left:50%;top:3%"/>
+     <img id="four" src="images/4.png" onmouseover="showPic(this.src);" style="width:25%;position:absolute;height:50%;left:75%;top:3%"/>
+     <img id="five" src="images/5.png" onmouseover="showPic(this.src);" style="width:25%;position:absolute;height:50%;left:0%;top:48%"/>
+     <img id="six" src="images/6.png" onmouseover="showPic(this.src);" style="width:30%;position:absolute;height:50%;left:20%;top:48%"/>
+     <img id="seven" src="images/7.png" onmouseover="showPic(this.src);" style="width:25%;position:absolute;height:50%;left:45%;top:48%"/>
+     <img id="eight" src="images/8.png" onmouseover="showPic(this.src);" style="width:30%;position:absolute;height:50%;left:70%;top:48%"/>
+   </div>
+
+
+
+   </div>
+
+
+<div >
+		<div style="top:31%;right:1%; position:fixed;">
+		<iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Falcheringaiitg&amp;width=90&amp;height=21&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;send=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>
+		</div>
+		<div id="social" style="top:35%;right:1%; position:fixed;">
+		<a href="https://www.facebook.com/alcheringaiitg" target="_blank"><img class="post-avatar" src="images/facebook.png" height="40" width="40"></a>
+		</div>
+		<div id="social" style="top:43%;right:1%; position:fixed;">
+		<a href="https://twitter.com/alcheringaiitg" target="_blank"><img class="post-avatar" src="images/twitter.png" height="40" width="40"></a>
+		</div>
+		<div id="social" style="top:51%;right:1%; position:fixed;">
+		<a href="http://www.youtube.com/iitgalcher" target="_blank"><img class="post-avatar" src="images/youtube.png" height="40" width="40"></a>
+		</div>
+</div>
+
+
+<!-- <div style="height:8%;width:100%;top:93%;left:0%;position:absolute;background-color:brown;z-index:37;" onclick="" ><a href="#footer">lol</a></div> -->
+
+<div id="footer" style="height:8%;width:100%;top:92%;left:0%;position:absolute;background-color:#534741;color:white;font-size:16pt;z-index:36;font-family: 'Special Elite', cursive;">
+	
+
+	<div id="udaantab" style="height:50%;width:6%;left:1%;top:30%;position:absolute;cursor:pointer;" onclick="location.href='http://alcheringa.in/udaan/'"><b>UDAAN</b></div>
+	<div id="iniativestab" style="height:50%;width:12%;left:10%;top:30%;position:absolute;cursor:pointer;" onclick="change('#initiatives')"><b>INITIATIVES</b></div>
+	<div id="stickerstab" style="height:50%;width:14%;left:25%;top:30%;position:absolute;cursor:pointer" onclick="location.href='http://www.alcheringa.in/alcher/stickers.html'"><b>STICKERS</b></div>
+	<div id="muntab" style="height:50%;width:10%;left:35%;top:30%;position:absolute;cursor:pointer" onclick="location.href='http://www.alcheringa.in/IITGMUN/'"><b>IITG MUN</b></div>
+  <div id="alcher14tab" style="height:50%;width:15%;left:45%;top:30%;position:absolute;cursor:pointer" onclick="change('#alcher14')"><b>ALCHERINGA 2014</b></div>
+	<div id="resultstab" style="height:50%;width:10%;left:62%;top:30%;position:absolute;cursor:pointer" onclick="change('#results')"><b>RESULTS</b></div>
+	<div id="gallerytab" style="height:50%;width:10%;left:72%;top:30%;position:absolute;cursor:pointer" onclick="location.href='gallery.html'"><b>GALLERY</b></div>
+  <div id="teamtab" style="height:50%;width:20%;left:81%;top:30%;position:absolute;cursor:pointer" onclick="change('#web_team')"><b>WEB DEVELOPER TEAM</b></div>
+
+</div>
+
+
+	</div>
+	
+
+</body>
+</html>

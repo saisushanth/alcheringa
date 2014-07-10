@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<head>
+<title>ZOOM CHECK</title>
+<style>
+#a
+{
+height:2%;
+width:1%;
+position:absolute;
+left:47%;
+top:45%;
+background-color:red;
+border:none;
+}
+
+#b
+{
+height:2%;
+width:1%;
+position:absolute;
+left:30%;
+top:23%;
+background-color:red;
+border:none;
+}
+
+#c
+{
+height:2%;
+width:1%;
+position:absolute;
+left:37%;
+top:68%;
+background-color:red;
+border:none;
+}
+
+#d
+{
+height:2%;
+width:1%;
+position:absolute;
+left:67%;
+top:70%;
+background-color:red;
+border:none;
+}
+
+@keyframes verify1
+{
+from 
+{
+height:2%;
+width:1%;
+left:47%;
+top:45%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@-webkit-keyframes verify1
+{
+from 
+{
+height:2%;
+width:1%;
+left:47%;
+top:45%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@keyframes verify2
+{
+from 
+{
+height:2%;
+width:1%;
+left:30%;
+top:23%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@-webkit-keyframes verify2
+{
+from 
+{
+height:2%;
+width:1%;
+left:30%;
+top:23%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@keyframes verify3
+{
+from 
+{
+height:2%;
+width:1%;
+left:37%;
+top:68%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@-webkit-keyframes verify3
+{
+from 
+{
+height:2%;
+width:1%;
+left:37%;
+top:68%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@keyframes verify4
+{
+from 
+{
+height:2%;
+width:1%;
+left:67%;
+top:70%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+@-webkit-keyframes verify4
+{
+from 
+{
+height:2%;
+width:1%;
+left:67%;
+top:70%;
+}
+to
+{
+height:100%;
+width:100%;
+left:0%;
+top:0%;
+}
+}
+
+
+
+</style>
+<script>
+function zoom1(x)
+{
+x.style.animation="verify1 3s forwards";
+x.style.WebkitAnimation="verify1 3s forwards";
+x.style.color="blue";
+x.style.fontSize="xx-large";
+x.innerHTML="hello";
+}
+function zoom2(x)
+{
+x.style.animation="verify2 3s forwards";
+x.style.WebkitAnimation="verify2 3s forwards";
+x.style.color="blue";
+x.style.fontSize="xx-large";
+x.innerHTML="hello";
+}
+function zoom3(x)
+{
+x.style.animation="verify3 3s forwards";
+x.style.WebkitAnimation="verify3 3s forwards";
+x.style.color="blue";
+x.style.fontSize="xx-large";
+x.innerHTML="hello";
+}
+function zoom4(x)
+{
+x.style.animation="verify4 3s forwards";
+x.style.WebkitAnimation="verify4 3s forwards";
+x.style.color="blue";
+x.style.fontSize="xx-large";
+x.innerHTML="hello";
+}
+</script>
+</head>
+<body>
+	<button id="a" onclick="zoom1(this)"> </button>
+	<button id="b" onclick="zoom2(this)"> </button>
+	<button id="c" onclick="zoom3(this)"> </button>
+	<button id="d" onclick="zoom4(this)"> </button>
+
+</body>
+</html>

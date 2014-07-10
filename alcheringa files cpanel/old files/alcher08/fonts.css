@@ -1,0 +1,73 @@
+/* CSS Document */
+
+.style1_link{  /*Links*/
+    
+	font-family: "Excalibur Logotype";
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.style2_eventshead{  /*Events headings*/
+    
+	font-family: "Excalibur Logotype";
+	color: #FFFFFF;
+	font-size: 14px;
+	text-decoration: none;
+	padding-right: 6px;
+}
+
+.style3_matterhead{  /*Matter Heading*/
+    
+	font-family: "Excalibur Logotype";
+	color: #FFFFFF;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.style4_mattertext{  /*Matter Text*/
+    
+	font-family: "Excalibur Logotype";
+	color: #FFFFFF;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.style5_headhit{  /*Events headings hit*/
+    
+	font-family: "Excalibur Logotype";
+	color: #1EFE00;
+	font-size: 15px;
+	text-decoration: none;
+
+}
+
+.style6_matterplain {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 12px;
+		font-family: Arial, Helvetica, sans-serif;
+
+}
+.style7_matterplainhead {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+	.style8_matterplainsmall {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+	
+		h1 {font-size: 25px; 
+		h2 {font-size: 22px};
+		h3 {font-size: 20px};
+		h4 {font-size: 18px};
+		h5 {font-size: 16px};
+        h6 {font-size: 14px};
+	
+}

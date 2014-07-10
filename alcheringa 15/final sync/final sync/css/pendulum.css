@@ -1,0 +1,28 @@
+@-webkit-keyframes oscillation
+{
+	from
+	{
+		-webkit-transform:rotate(-17deg);
+	}
+	to{
+		-webkit-transform:rotate(17deg);
+	}
+}
+ 
+@keyframes oscillation
+{
+	from{
+		transform:rotate(-17deg);
+	}
+	to{
+		transform:rotate(17deg);
+	}
+}
+
+#oscillate
+{
+-webkit-transform-origin:55% 0%;  
+transform-origin:55% 0%;   
+-webkit-animation: oscillation 3s ease-in-out infinite alternate;
+animation: oscillation 3s ease-in-out infinite alternate;
+}

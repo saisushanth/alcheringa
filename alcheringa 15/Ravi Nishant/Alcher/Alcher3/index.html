@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alcheringa</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link rel="shortcut icon" href="image/alcher%20lady.png" type="image/x-icon" />
+<script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+	$("#spinner").fadeOut("slow");
+})
+</script>
+</head>
+<body>
+<div id="spinner"></div>
+<div id="slideshow">
+<img src="image/b1.jpg" class="bgM"/>
+<img src="image/b2.jpg" class="bgM"/>
+<img src="image/b3.jpg" class="bgM"/>
+<img src="image/b4.jpg" class="bgM"/>
+<img src="image/b5.jpg" class="bgM"/>
+<img src="image/b6.jpg" class="bgM"/>
+</div>
+<div class="wrap">
+	<div class="invisible"></div>
+	<div class="emc sec">
+		<h1>A</h1>
+	
+		<a href=""><img src="image/c1.jpg" /></a>
+		
+		<p>Alcheringa is by far the largest cultural festival of North-East India and since its inception has served as a pioneer of art and culture for the youth. The festival enjoys the mammoth footfall of over 50,000 and participation from over 350 colleges across India.</p>
+	</div>	
+	<div class="paradigm sec">
+		<h1>B</h1>
+	
+		<a href=""><img src="image/c2.jpg" /></a>
+		
+		<p>Alcheringa is by far the largest cultural festival of North-East India and since its inception has served as a pioneer of art and culture for the youth. The festival enjoys the mammoth footfall of over 50,000 and participation from over 350 colleges across India.</p>
+	</div>
+	<div class="jist sec">
+		<h1>C</h1>
+	
+		<a href=""><img src="image/c3.jpg" /></a>
+		
+		<p>Alcheringa is by far the largest cultural festival of North-East India and since its inception has served as a pioneer of art and culture for the youth. The festival enjoys the mammoth footfall of over 50,000 and participation from over 350 colleges across India.</p>
+	</div>
+	<div class="footer">
+	"Some Text"
+	</div>
+	<a href=""><img src="image/c4.jpg" alt="" /></a>
+</div>
+
+
+<script>
+$(document).ready(function() {
+	$('#slideshow').cycle({
+		fx: 'fade',
+		pager: '#smallnav', 
+		pause:   1, 
+		speed: 1800,
+		timeout:  3500 
+	});			
+});
+</script>
+</body>
+</html>
